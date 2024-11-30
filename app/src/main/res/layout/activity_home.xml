@@ -1,0 +1,195 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Current time and date widget -->
+    <LinearLayout
+        android:id="@+id/timeDateWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#F0F0F0"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <!-- Sun/Moon Icon -->
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/sunny" />
+
+        <!-- Time, Date, Day Text -->
+        <TextView
+            android:id="@+id/timeDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Time: 12:00 PM\nDate: Monday, Nov 23, 2024"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Icon Grid -->
+    <GridLayout
+        android:id="@+id/iconGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timeDateWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="118dp">
+
+        <!-- Photo Album Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/photoAlbumIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:contentDescription="Photo Album"
+                android:onClick="openPhotoAlbumPage"
+                android:src="@drawable/album" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Memory Albums"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Map Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mapIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:contentDescription="Maps"
+                android:onClick="openMapsPage"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Maps"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Contacts Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/contactIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:contentDescription="Contacts"
+                android:onClick="openContactsPage"
+                android:src="@drawable/contacts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contacts"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Audio Icon -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/audioIcon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:contentDescription="Audio Assistant"
+                android:onClick="openAudioPage"
+                android:src="@drawable/audio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="My Audio Assistant"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/ReminderIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:clickable="true"
+        android:contentDescription="Maps"
+        android:onClick="openReminderPage"
+        android:src="@drawable/reminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Set Reminders"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.867" />
+</androidx.constraintlayout.widget.ConstraintLayout>
