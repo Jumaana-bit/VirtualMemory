@@ -39,9 +39,10 @@
             </intent-filter>
         </activity>
 
+        <!-- Enter your own API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAJmSdbZteM1NzWd4ZF5pniIWHCLeQcHSA" />
+            android:value="" /> 
 
         <provider
             android:name="androidx.core.content.FileProvider"
