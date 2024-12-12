@@ -44,6 +44,10 @@ The Virtual Memory App is an Android application designed to assist seniors and 
 * __Database:__ SQLite for local storage of contacts and media data.
 * __Google Maps API:__ For map integration and navigation functionality.
 * __Android Framework:__ Used to build a user-friendly interface and manage app lifecycle.
-* __SharedPreferences:__ For saving and retrieving location data asynchronously.   
+* __SharedPreferences:__ For saving and retrieving location data asynchronously.
+
+
+## Demo ##
+https://github.com/user-attachments/assets/222593ce-7655-4880-8268-086a35141f12
 
 
