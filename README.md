@@ -3,8 +3,7 @@
 ## Overview ##
 The Virtual Memory App is an Android application designed to assist seniors and individuals with dementia by providing a user-friendly interface to manage memories, reminders, and important information. The app features personalized photo albums, contact management, and multimedia support for an enriching user experience.
 
- - - - -
-
+ 
  ## Features ##
 1. __Personalized Photo Album__
 * Create folders like "Family" or "Friends".
