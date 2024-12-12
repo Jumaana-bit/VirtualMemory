@@ -33,7 +33,8 @@ The Virtual Memory App is an Android application designed to assist seniors and 
 
 ### Installation ###
 1. Clone the repository:
-   ``` git clone
+   ```
+   git clone https://github.com/Jumaana-bit/VirtualMemory.git
    ```
 2. Open the project in Android Studio.
 3. Sync Gradle files to download dependencies.
