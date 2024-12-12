@@ -6,12 +6,12 @@ The Virtual Memory App is an Android application designed to assist seniors and 
  - - - -
 
  ## Features ##
- 1. __Personalized Photo Album__
+1. __Personalized Photo Album__
   * Create folders like "Family" or "Friends".
   * Add, view, label, and delete photos and videos within folders.
   * Each media item can be labeled for easy identification.
   * Supports animations for folder icons to make navigation more intuitive.
-2.__Contact Management__
+2. __Contact Management__
   * Store contacts with categories such as "Friends" or "Family."
   * Each contact includes a name, relationship, email, phone number, category, and an optional audio note.
 3. __Reminders__
