@@ -39,6 +39,12 @@ The Virtual Memory App is an Android application designed to assist seniors and 
 2. Open the project in Android Studio.
 3. Sync Gradle files to download dependencies.
 4. Build and run the project on an emulator or connected device.
-   
+
+## Tech Stack ##
+* __Programming Language:__ Java for Android development.
+* __Database:__ SQLite for local storage of contacts and media data.
+* __Google Maps API:__ For map integration and navigation functionality.
+* __Android Framework:__ Used to build a user-friendly interface and manage app lifecycle.
+* __SharedPreferences:__ For saving and retrieving location data asynchronously.   
 
 
